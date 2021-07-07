@@ -1,0 +1,50 @@
+@media screen and (max-width:1200px) {
+    .container{
+        max-width: 100%;
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 100%;
+        padding: 0 3rem;
+    }
+
+    .hero-text-box{
+        width: 100%;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portfolio-grid-item:nth-child(5) {
+        grid-column: 1/2;
+    }
+        
+}
+
+@media screen and (max-width:480px) {
+    html, body{
+        font-size: 40%;
+    }
+
+    .hero-text-box h1{
+        font-size: 4rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid-item:nth-child(5) {
+        grid-column: 1/2;
+    }
+}
